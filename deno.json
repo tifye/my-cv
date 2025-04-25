@@ -1,0 +1,11 @@
+{
+    "imports": {
+        "@react-pdf/renderer": "npm:@react-pdf/renderer@^4.3.0",
+        "@types/react": "npm:@types/react@^19.1.2",
+        "react": "npm:react@^19.1.0"
+    },
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "jsxImportSource": "react"
+    }
+}
