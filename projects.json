@@ -1,0 +1,50 @@
+[
+    {
+        "title": "BURNR — Tech Lead and Backend Developer",
+        "description": "A social fitness platform built primarily in Go.",
+        "bullets": [
+            "Led backend design, service boundaries, and tech stack decisions.",
+            "Designed hybrid storage using PostgreSQL, Firestore, and Cloud Storage.",
+            "Integrated Apple Health syncing and leaderboard ranking based on user goals.",
+            "Upgraded caching and pub/sub with Dragonfly and Redpanda.",
+            "Deployed backend on self-hosted VPS using Docker Stack/Swarm."
+        ]
+    },
+    {
+        "title": "Garden Observer — Real-time 3D Robot Visualization ",
+        "description": "A full-stack web app to monitor live and simulated robot lawnmowers in 3D.",
+        "bullets": [
+            "Combined Unity Wasm for 3D rendering with Blazor for UI and control layer.",
+            "Parsed SVG layouts to generate meshes for 3D environments.",
+            "Used an internal event hub for real-time robot telemetry, updating position in 3D space.",
+            "Created a Blazor-to-Unity component bridge (akin to custom React renderer)."
+        ]
+    },
+    {
+        "title": "Coconut — SSH HTTP Tunnel",
+        "description": "An HTTP tunnel over SSH in Go (similar to Ngrok), using only standard libraries.",
+        "bullets": [
+            "Designed reverse proxy routing based on subdomains and SSH channels.",
+            "Added multiplexed and dedicated tunnels to handle websockets and long-lived connections.",
+            "Integrated Apple Health syncing and leaderboard ranking based on user goals.",
+            "Currently building a production-ready version with full monitoring and tests."
+        ]
+    },
+    {
+        "title": "Cinnamon — Media Stashing Server and Extension",
+        "description": "Created a self-hosted service to capture and store HLS video streams.",
+        "bullets": [
+            "Built a Go backend using FFmpeg to convert and stash videos.",
+            "Integrated MinIO (S3 compatible) storage and built a lightweight web UI.",
+            "Developed a custom browser protocol (cinnamon://) to launch downloads from the web."
+        ]
+    },
+    {
+        "title": "Social Media Image Archiver — CLI Tool",
+        "description": "A CLI tool to scrape liked tweets’ images, saving them to MinIO storage.",
+        "bullets": [
+            "Designed browser automation as a state machine, inspired by Rob Pike",
+            "Used SQLite for deduplication and checkpointing of downloads."
+        ]
+    }
+]

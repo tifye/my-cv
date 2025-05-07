@@ -64,8 +64,8 @@ export function Header() {
 function styles(theme: Theme) {
     return StyleSheet.create({
         header: {
-            backgroundColor: theme.Base300,
-            color: theme.BaseContent,
+            backgroundColor: theme.Neutral,
+            color: theme.NeutralContent,
             height: 125,
             display: "flex",
             flexDirection: "row",
@@ -94,14 +94,14 @@ function styles(theme: Theme) {
             height: "1",
             borderRadius: 999,
             flexGrow: 1,
-            backgroundColor: theme.BaseContent,
+            backgroundColor: theme.NeutralContent,
             alignSelf: "center",
             marginLeft: theme.SpacingLarge,
             marginTop: theme.SpacingSmall,
             opacity: 0.25,
         },
         linkText: {
-            color: theme.BaseContent,
+            color: theme.NeutralContent,
             textDecoration: "none",
         },
     })
