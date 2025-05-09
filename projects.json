@@ -38,13 +38,5 @@
             "Integrated MinIO (S3 compatible) storage and built a lightweight web UI.",
             "Developed a custom browser protocol (cinnamon://) to launch downloads from the web."
         ]
-    },
-    {
-        "title": "Social Media Image Archiver — CLI Tool",
-        "description": "A CLI tool to scrape liked tweets’ images, saving them to MinIO storage.",
-        "bullets": [
-            "Designed browser automation as a state machine, inspired by Rob Pike",
-            "Used SQLite for deduplication and checkpointing of downloads."
-        ]
     }
 ]

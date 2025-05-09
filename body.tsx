@@ -37,16 +37,21 @@ export function Body() {
                     <SectionBody style={{
                         gap: theme.SpacingLarge
                     }}>
-                        {projects.map((project) => (
-                            <Project>
-                                <ProjectTitle title={project.title}/>
-                                <ProjectShortDescription description={project.description}/>
-                                <ProjectBulletList>
-                                    {project.bullets.map((bullet) => (
-                                        <ProjectBullet text={bullet} />
-                                    ))}
-                                </ProjectBulletList>
-                            </Project>
+                        {projects.map((project, idx) => (
+                      
+                                <Project>
+                                    <ProjectTitle title={project.title}/>
+                                    <ProjectShortDescription description={project.description}/>
+                                    <ProjectBulletList>
+                                        {project.bullets.map((bullet) => (
+                                            <ProjectBullet text={bullet} />
+                                        ))}
+                                    </ProjectBulletList>
+                                    {idx !== projects.length - 1 && (
+                                        <Separator style={{ marginTop: theme.SpacingMedium }}/>
+                                    )}
+                                </Project>
+                          
                         ))}
                     </SectionBody>
                 </Section>
@@ -77,7 +82,8 @@ export function Body() {
 function styles(theme: Theme) {
     return StyleSheet.create({
         body: {
-            padding: theme.SpacingExtraLarge,
+            paddingTop: theme.SpacingLarge,
+            paddingHorizontal: theme.SpacingExtraLarge,
             height: "100%",
             backgroundColor: theme.Base200,
             display: "flex",
