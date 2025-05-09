@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Tech Lead, Software Engineer",
+        "company": "BURNR",
+        "date": "2024 - Now",
+        "location": "Remote",
+        "note": "A founder and tech lead of fitness oriented social media app BURNR."
+    },
+    {
+        "title": "Software Engineer",
+        "company": "Husqvarna Group, Robotics R&D",
+        "date": "2022 - 2024",
+        "location": "Huskvarna, Sweden",
+        "note": "Husqvarna Group's Robotics R&D department to developing simulation software and internal tooling."
+    },
+    {
+        "title": "Software Engineer",
+        "company": "Jönköping University, ROL Ergo",
+        "date": "2021",
+        "location": "Jönköping, Sweden",
+        "note": "Hired by contract through the university to work with ROL Ergo on a research project."
+    },
+    {
+        "title": "Laboratory Engineer",
+        "company": "Jönköping University",
+        "date": "2020 - 2022 ",
+        "location": "Jönköping, Sweden",
+        "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework."
+    }
+]

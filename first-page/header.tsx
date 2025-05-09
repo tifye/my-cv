@@ -1,6 +1,6 @@
 import { View, Text, Link, Image } from "npm:@react-pdf/renderer"
 import { StyleSheet } from "@react-pdf/renderer"
-import { Theme, useTheme } from "./theme.ts"
+import { Theme, useTheme } from "@src/theme.ts"
 
 export function Header() {
     const theme = useTheme()

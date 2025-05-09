@@ -3,7 +3,10 @@
         "name": "Tommy Gustavsson",
         "title": "Software Architect",
         "email": "tommy.gustavsson@husqvarnagroup.com",
-        "phone": "+46 725877027",
+        "phone": {
+            "text": "+46 725877027",
+            "link": "tel:+46725877027"
+        },
         "links": {},
         "note": "Husqvarna Group, Work/character reference (prefers email first)"
     },
@@ -11,7 +14,10 @@
         "name": "Thomas Jansson",
         "title": "Lead Senior Software Engineer",
         "email": "thomas.jh.jansson@protonmail.com",
-        "phone": "+46 708149315",
+        "phone": {
+            "text": "+46 708149315",
+            "link": "tel:+46708149315"
+        },
         "links": {
             "LinkedIn": "https://www.linkedin.com/in/thomas-jansson-7b1b0670/"
         },

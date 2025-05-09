@@ -1,6 +1,6 @@
 import React from "npm:react"
 import { Text, View } from "npm:@react-pdf/renderer"
-import { useTheme } from "./theme.ts"
+import { useTheme } from "@src/theme.ts"
 
 function Project({ children }: { children?: React.JSXElement }) {
     const theme = useTheme()

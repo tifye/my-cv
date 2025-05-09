@@ -1,6 +1,6 @@
 import React from "react"
 import { View, ViewProps } from "npm:@react-pdf/renderer"
-import { useTheme } from "./theme.ts"
+import { useTheme } from "@src/theme.ts"
 
 type SectionHeaderProps = {
     children?: React.JSXElement

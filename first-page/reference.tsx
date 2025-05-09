@@ -1,12 +1,15 @@
 import { Text, View } from "npm:@react-pdf/renderer"
-import { useTheme } from "./theme.ts"
-import { MinWidthLink } from "./MinWidthLink.tsx"
+import { useTheme } from "@src/theme.ts"
+import { MinWidthLink } from "../components/MinWidthLink.tsx"
 
 type Reference = {
     name: string
     title: string
     email: string
-    phone?: string
+    phone?: {
+        text: string
+        link: string
+    }
     links: {
         [key: string]: string | undefined
     }
@@ -67,7 +70,17 @@ function ReferenceBlock({ reference }: ReferenceBlockProps) {
                         {text}
                     </MinWidthLink>
                 ))}
-                {reference.phone && <Text>{reference.phone}</Text>}
+                {reference.phone && (
+                    <MinWidthLink
+                        src={reference.phone.link}
+                        style={{
+                            color: theme.Primary,
+                            fontWeight: "semibold",
+                        }}
+                    >
+                        {reference.phone.text}
+                    </MinWidthLink>
+                )}
                 <Text>{reference.note}</Text>
             </View>
         </View>

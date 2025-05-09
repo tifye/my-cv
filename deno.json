@@ -2,10 +2,14 @@
     "tasks": {
         "run": "deno run --allow-env --allow-write --allow-read --watch main.tsx"
     },
+    "importMap": "./import_map.json",
     "imports": {
         "@react-pdf/renderer": "npm:@react-pdf/renderer@^4.3.0",
         "@types/react": "npm:@types/react@^19.1.2",
-        "react": "npm:react@^19.1.0"
+        "react": "npm:react@^19.1.0",
+        "@components/": "./components/",
+        "@assets/": "./assets/",
+        "@src/": "./"
     },
     "compilerOptions": {
         "jsx": "react-jsx",

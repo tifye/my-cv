@@ -1,14 +1,16 @@
 import { StyleSheet, Text, View } from "npm:@react-pdf/renderer"
-import { Theme, useTheme } from "./theme.ts"
-import { Section, SectionBody, SectionHeader } from "./section.tsx"
+import { Theme, useTheme } from "@src/theme.ts"
+import { Section, SectionBody, SectionHeader } from "@components/section.tsx"
 import { Project, ProjectTitle } from "./project.tsx"
-import projects  from "./projects.json" with {type: "json"}
-import references from "./references.json" with {type: "json"}
+import projects  from "@assets/projects.json" with {type: "json"}
+import references from "@assets/references.json" with {type: "json"}
+import experiences from "@assets/experiences.json" with {type: "json"}
 import { ProjectShortDescription } from "./project.tsx";
 import { ProjectBulletList } from "./project.tsx";
 import { ProjectBullet } from "./project.tsx";
 import { ReferenceBlock } from "./reference.tsx";
-import { Separator } from "./Separator.tsx";
+import { Separator } from "@components/Separator.tsx";
+import { ExperienceBlock } from "./experience.tsx";
 
 export function Body() {
     const theme = useTheme()
@@ -56,13 +58,13 @@ export function Body() {
                     </SectionBody>
                 </Section>
             </View>
-            <View style={{ flexGrow: 1 }}>
+            <View style={style.aside}>
                 <Section>
                     <SectionHeader>
                         <Text>References</Text>
                     </SectionHeader>
                     <SectionBody style={{
-                        gap: theme.SpacingLarge
+                        gap: theme.SpacingMedium
                     }}>
                         {references.map((reference, idx) => (
                             <>
@@ -70,6 +72,23 @@ export function Body() {
                                     <Separator />
                                 )}
                                 <ReferenceBlock reference={reference}/>
+                            </>
+                        ))}
+                    </SectionBody>
+                </Section>
+                <Section>
+                    <SectionHeader>
+                        <Text>Experience</Text>
+                    </SectionHeader>
+                    <SectionBody style={{
+                        gap: theme.SpacingMedium
+                    }}>
+                        {experiences.map((experience, idx) => (
+                            <>
+                                {idx !== 0 && (
+                                    <Separator />
+                                )}
+                                <ExperienceBlock experience={experience}/>
                             </>
                         ))}
                     </SectionBody>
@@ -94,5 +113,9 @@ function styles(theme: Theme) {
             width: "60%",
             gap: theme.SpacingLarge,
         },
+        aside: {
+            gap: theme.SpacingLarge,
+            width:"40%",
+        }
     })
 }

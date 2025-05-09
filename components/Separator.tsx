@@ -1,6 +1,6 @@
 import React from "npm:react"
 import { View, ViewProps } from "npm:@react-pdf/renderer"
-import { useTheme } from "./theme.ts"
+import { useTheme } from "@src/theme.ts"
 
 const Separator = React.forwardRef<View, ViewProps>(_Separator)
 function _Separator(
