@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "npm:@react-pdf/renderer"
+import { Link, StyleSheet, Text, View } from "npm:@react-pdf/renderer"
 import { Theme, useTheme } from "@src/theme.ts"
 import { Section, SectionBody, SectionHeader } from "@components/section.tsx"
 import { Project, ProjectTitle } from "./project.tsx"
@@ -37,35 +37,47 @@ export function Body() {
                         <Text>Projects</Text>
                     </SectionHeader>
                     <SectionBody style={{
-                        gap: theme.SpacingLarge
+                        gap: theme.SpacingLarge,
+                        flexDirection: "column",
                     }}>
-                        {projects.map((project, idx) => (
-                      
-                                <Project>
-                                    <ProjectTitle title={project.title}/>
-                                    <ProjectShortDescription description={project.description}/>
-                                    <ProjectBulletList>
-                                        {project.bullets.map((bullet) => (
-                                            <ProjectBullet text={bullet} />
-                                        ))}
-                                    </ProjectBulletList>
-                                    {idx !== projects.length - 1 && (
-                                        <Separator style={{ marginTop: theme.SpacingMedium }}/>
-                                    )}
-                                </Project>
-                          
+                        {projects.map((project) => (
+                            <Project>
+                                <ProjectTitle title={project.title}/>
+                                <ProjectShortDescription description={project.description}/>
+                                <ProjectBulletList>
+                                    {project.bullets.map((bullet) => (
+                                        <ProjectBullet text={bullet} />
+                                    ))}
+                                </ProjectBulletList>
+                                <Separator style={{ marginTop: theme.SpacingMedium }}/>
+                            </Project>
                         ))}
                     </SectionBody>
                 </Section>
+                <View style={{
+                    fontSize: 8,
+                    flexGrow: 1,
+                    flexDirection: "row",
+                    marginTop: theme.SpacingLarge
+                }}>
+                    <Text style={{ alignSelf: "flex-end" }}>
+                        Explore more of my work at{" "}
+                        <Link src="https://www.joshuadematas.me" style={{
+                            color: theme.Primary,
+                            fontWeight: "semibold",
+                        }}>
+                            joshuadematas.me
+                        </Link>
+                        .
+                    </Text>
+                </View>
             </View>
             <View style={style.aside}>
                 <Section>
                     <SectionHeader>
                         <Text>References</Text>
                     </SectionHeader>
-                    <SectionBody style={{
-                        gap: theme.SpacingMedium
-                    }}>
+                    <SectionBody style={{ gap: theme.SpacingMedium }}>
                         {references.map((reference, idx) => (
                             <>
                                 {idx !== 0 && (
@@ -80,9 +92,7 @@ export function Body() {
                     <SectionHeader>
                         <Text>Experience</Text>
                     </SectionHeader>
-                    <SectionBody style={{
-                        gap: theme.SpacingMedium
-                    }}>
+                    <SectionBody style={{ gap: theme.SpacingMedium }}>
                         {experiences.map((experience, idx) => (
                             <>
                                 {idx !== 0 && (
@@ -101,21 +111,27 @@ export function Body() {
 function styles(theme: Theme) {
     return StyleSheet.create({
         body: {
-            paddingTop: theme.SpacingLarge,
-            paddingHorizontal: theme.SpacingExtraLarge,
             height: "100%",
             backgroundColor: theme.Base200,
             display: "flex",
             flexDirection: "row",
-            gap: theme.SpacingExtraLarge,
         },
         main: {
             width: "60%",
+            height: "100%",
             gap: theme.SpacingLarge,
+            paddingTop: theme.SpacingLarge,
+            paddingBottom: theme.SpacingExtraLarge,
+            paddingRight: theme.SpacingLarge,
+            paddingLeft: theme.SpacingExtraLarge
         },
         aside: {
-            gap: theme.SpacingLarge,
             width:"40%",
+            gap: theme.SpacingLarge,
+            paddingTop: theme.SpacingLarge,
+            backgroundColor: theme.Base300,
+            paddingLeft: theme.SpacingLarge,
+            paddingRight: theme.SpacingExtraLarge
         }
     })
 }

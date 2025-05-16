@@ -1,8 +1,9 @@
 import "npm:react"
 import "./fonts.ts"
 import { Document, Page, render, View } from "npm:@react-pdf/renderer"
-import { Header } from "./header.tsx"
-import { Body } from "./body.tsx"
+import { Header } from "./first_page/header.tsx"
+import { Body } from "./first_page/body.tsx"
+import { SecondPage } from "./second_page/index.tsx"
 
 function CVDocument() {
     return (
@@ -12,6 +13,9 @@ function CVDocument() {
                 <View style={{ flexGrow: 1 }}>
                     <Body />
                 </View>
+            </Page>
+            <Page size="A4">
+                <SecondPage />
             </Page>
         </Document>
     )

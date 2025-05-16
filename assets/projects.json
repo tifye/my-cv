@@ -1,6 +1,6 @@
 [
     {
-        "title": "BURNR — Tech Lead and Backend Developer",
+        "title": "BURNR — Tech Lead and Backend Engineer",
         "description": "A social fitness platform built primarily in Go.",
         "bullets": [
             "Led backend design, service boundaries, and tech stack decisions.",
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "title": "Coconut — SSH HTTP Tunnel",
+        "title": "Coconut — Reverse proxy SSH HTTP tunnel",
         "description": "An HTTP tunnel over SSH in Go (similar to Ngrok), using only standard libraries.",
         "bullets": [
             "Designed reverse proxy routing based on subdomains and SSH channels.",

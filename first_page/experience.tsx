@@ -23,7 +23,7 @@ function ExperienceBlock({ experience }: ExperienceBlockProps) {
                 style={{
                     fontSize: 8,
                     flexDirection: "row",
-                    gap: theme.SpacingMedium,
+                    gap: theme.SpacingLarge,
                 }}
             >
                 <Text>{experience.date}</Text>
