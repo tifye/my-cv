@@ -1,7 +1,11 @@
-import { View } from "npm:@react-pdf/renderer"
+import { Text, View } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
-import { TecnicalSkillsBlock } from "@src/second_page/technical_skills.tsx"
 import { EducationBlock } from "@src/second_page/education.tsx"
+import { ExperienceBlock } from "@src/second_page/experience.tsx"
+import experiences from "@assets/experiences.json" with {type: "json"}
+import { Section, SectionHeader, SectionBody } from "@src/components/section.tsx";
+import { Separator } from "@src/components/Separator.tsx";
+
 
 function SecondPage() {
     const theme = useTheme()
@@ -14,29 +18,28 @@ function SecondPage() {
                 gap: theme.SpacingExtraLarge,
             }}
         >
-            <TecnicalSkillsBlock skills={skills} />
+            <Section>
+                <SectionHeader>
+                    <Text>Experience</Text>
+                </SectionHeader>
+                <SectionBody style={{ 
+                        gap: theme.SpacingLarge,
+                        flexDirection: "column", 
+                    }}>
+                    <Text>Programming since 2015, professional since 2020. I treat software engineering as both a craft and a pastime.</Text>
+                    <Separator />
+                    {experiences.map((experience) => (
+                        <>
+                            <ExperienceBlock experience={experience}/>
+                            <Separator />
+                        </>
+                    ))}
+                    <Text>I’m deeply excited about programming — for me, it’s more than a job. I love building systems that are useful, durable, and a joy to maintain.</Text>
+                </SectionBody>
+            </Section>
             <EducationBlock />
         </View>
     )
 }
-
-const skills = [
-    "Go",
-    "Docker",
-    "GCP",
-    "Terraform",
-    "PostgreSQL",
-    "Redis",
-    "React",
-    "Redpanda",
-    "OpenTelemetry",
-    "C#",
-    "Sqlite",
-    "Unity",
-    "Javascript",
-    "S3 storage",
-    "Github",
-    "SQL",
-]
 
 export { SecondPage }

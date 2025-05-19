@@ -4,27 +4,84 @@
         "company": "BURNR",
         "date": "2024 - Now",
         "location": "Remote",
-        "note": "A founder and tech lead of fitness oriented social media app BURNR."
+        "note": "A founder and tech lead of fitness oriented social media app BURNR.",
+        "bullets": [
+            "Leading a small team in building a robust platform.",
+            "Primarily built around GCP using Terraform.",
+            "Utilizing simulation testing and testing using Testcontainers."
+        ],
+        "tools": [
+            "Terraform",
+            "PostgreSQL",
+            "Firestore",
+            "Redis",
+            "Pub/Sub",
+            "GCP",
+            "Go",
+            "OpenTelemetry",
+            "Prometheus",
+            "Grafana"
+        ]
     },
     {
         "title": "Software Engineer",
         "company": "Husqvarna Group, Robotics R&D",
         "date": "2022 - 2024",
         "location": "Huskvarna, Sweden",
-        "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling."
+        "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling.",
+        "bullets": [
+            "Initially began work on simulation software in Unity.",
+            "Later positioned as an internal project incubator, successfully leading four projects from ideastion through execution to launch.",
+            "Developed many other tools along side alleviating many internal pain points.",
+            "Kept high standard of wokring in a wide range of areas: Blazor, 3D web, Azure Cloud, the nitty-gritty of algorithm optimization and linear algebra, CLI tools, backend and APIs."
+        ],
+        "tools": [
+            "Algorithms",
+            "Blazor",
+            "C#",
+            "DotNet",
+            "Unity",
+            "Azure",
+            "Go"
+        ]
     },
     {
         "title": "Software Engineer",
         "company": "Jönköping University, ROL Ergo",
         "date": "2021",
         "location": "Jönköping, Sweden",
-        "note": "Hired by contract through the university to work with ROL Ergo on a research project."
+        "note": "Hired by contract through the university to work with ROL Ergo on a research project.",
+        "bullets": [
+            "Collected heat and motion sensor data that was visualized in a web UI.",
+            "Enhanced sensor data usability by processing over 15 sensors in real time."
+        ],
+        "tools": [
+            "Socket.IO",
+            "Vue",
+            "Express.js",
+            "NodeJS",
+            "PostgreSQL"
+        ]
     },
     {
         "title": "Laboratory Engineer",
         "company": "Jönköping University",
         "date": "2020 - 2022 ",
         "location": "Jönköping, Sweden",
-        "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework."
+        "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework.",
+        "bullets": [
+            "Wrote guides on Docker, MS SQL, and iOS.",
+            "Led classes of over 25 students, providing guidance and support throughout two years of their studies.",
+            "Worked with topics including databases, data structures & algorithms, object-oriented programming, NodeJS web development, iOS development, networking programming, and more."
+        ],
+        "tools": [
+            "SQL",
+            "NodeJS",
+            "C++",
+            "Swift",
+            "Go",
+            "AWS",
+            "Docker"
+        ]
     }
 ]

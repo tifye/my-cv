@@ -4,13 +4,13 @@ import { Section, SectionBody, SectionHeader } from "@components/section.tsx"
 import { Project, ProjectTitle } from "./project.tsx"
 import projects  from "@assets/projects.json" with {type: "json"}
 import references from "@assets/references.json" with {type: "json"}
-import experiences from "@assets/experiences.json" with {type: "json"}
 import { ProjectShortDescription } from "./project.tsx";
 import { ProjectBulletList } from "./project.tsx";
 import { ProjectBullet } from "./project.tsx";
 import { ReferenceBlock } from "./reference.tsx";
 import { Separator } from "@components/Separator.tsx";
-import { ExperienceBlock } from "./experience.tsx";
+import { TecnicalSkillsBlock } from "@src/first_page/technical_skills.tsx";
+import { MinWidthLink } from "@src/components/MinWidthLink.tsx";
 
 export function Body() {
     const theme = useTheme()
@@ -41,7 +41,7 @@ export function Body() {
                         flexDirection: "column",
                     }}>
                         {projects.map((project) => (
-                            <Project key={project.title}>
+                            <Project>
                                 <ProjectTitle title={project.title} link={project.link} />
                                 <ProjectShortDescription description={project.description}/>
                                 <ProjectBulletList>
@@ -88,25 +88,91 @@ export function Body() {
                         ))}
                     </SectionBody>
                 </Section>
+                <TecnicalSkillsBlock skills={skills} />
                 <Section>
                     <SectionHeader>
-                        <Text>Experience</Text>
+                        <Text>Hobbies</Text>
                     </SectionHeader>
-                    <SectionBody style={{ gap: theme.SpacingMedium }}>
-                        {experiences.map((experience, idx) => (
-                            <>
-                                {idx !== 0 && (
-                                    <Separator />
-                                )}
-                                <ExperienceBlock experience={experience}/>
-                            </>
-                        ))}
+                    <SectionBody>
+                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Recently I've been falling in love with going under the hood of technologies I used and learn the inner workings of things.</Text>
+                    </SectionBody>
+                </Section>
+                <Section>
+                    <SectionHeader />
+                    <SectionBody style={{ gap: theme.SpacingSmall }}>
+                        <Text>Visit my</Text>
+                        
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://github.com/tifye"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                GitHub
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                too many unfinished projects
+                            </Text>
+                        </View>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            
+                            <MinWidthLink
+                                src="https://publish.obsidian.md/tifye/Welcome"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                Digital notebook
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                it's a bit messy
+                            </Text>
+                        </View>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://www.joshuadematas.me/"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                Portfolio
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                to see more projects
+                            </Text>
+                        </View>
+                        <MinWidthLink
+                            src="https://www.linkedin.com/in/joshua-de-matas-18bb30206/"
+                            style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                            LinkedIn
+                        </MinWidthLink>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://www.joshuadematas.me/cv.pdf"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                CV
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                again for whatever reason
+                            </Text>
+                        </View>
                     </SectionBody>
                 </Section>
             </View>
         </View>
     )
 }
+
+const skills = [
+    "Go",
+    "Docker",
+    "GCP",
+    "React",
+    "Terraform",
+    "PostgreSQL",
+    "Redis",
+    "Redpanda",
+    "OpenTelemetry",
+    "C#",
+    "Sqlite",
+    "Unity",
+    "Javascript",
+    "S3 storage",
+    "Github",
+    "SQL",
+]
 
 function styles(theme: Theme) {
     return StyleSheet.create({
