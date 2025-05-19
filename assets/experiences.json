@@ -33,7 +33,7 @@
         "bullets": [
             "Initially began work on simulation software in Unity.",
             "Later positioned as an internal project incubator, successfully leading four projects from ideation through execution to launch.",
-            "Developed many other tools along side alleviating many internal pain points.",
+            "Developed internal tools that resolved key pain points and improved workflows across teams.",
             "Kept high standard of working in a wide range of areas: Blazor, 3D web, Azure Cloud, the nitty-gritty of algorithm optimization and linear algebra, CLI tools, backend and APIs."
         ],
         "tools": [
@@ -72,8 +72,8 @@
         "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework.",
         "bullets": [
             "Wrote guides on Docker, MS SQL, and iOS.",
-            "Led classes of over 25 students, providing guidance and support throughout two years of their studies.",
-            "Worked with topics including databases, data structures & algorithms, object-oriented programming, NodeJS web development, iOS development, networking programming, and more."
+            "Mentored over 25 students across two academic years.",
+            "Covered topics including databases, data structures & algorithms, object-oriented programming, NodeJS web development, iOS development, networking programming, and more."
         ],
         "tools": [
             "SQL",

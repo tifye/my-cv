@@ -26,7 +26,7 @@ function SecondPage() {
                         gap: theme.SpacingLarge,
                         flexDirection: "column", 
                     }}>
-                    <Text>Programming since 2015, professional since 2020. I treat software engineering as both a craft and a pastime.</Text>
+                    <Text>Programming since 2015, professional since 2020. Software engineering is both my profession and creative outlet.</Text>
                     <Separator />
                     {experiences.map((experience) => (
                         <>

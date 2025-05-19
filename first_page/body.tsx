@@ -26,7 +26,7 @@ export function Body() {
                         <Text>
                             Operating at a 
                             <Text style={{fontWeight: "bold"}}> senior level </Text>
-                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH-based HTTP tunnels, and CLI tools. My broad engineering perspective helps me create efficient, maintainable systems focused on performance, clarity, and developer experience.
+                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools. My engineering perspective helps me create systems that are efficient, maintainable, and empowering for developers.
                         </Text>
                     </SectionBody>
                 </Section>
@@ -92,7 +92,7 @@ export function Body() {
                         <Text>Hobbies</Text>
                     </SectionHeader>
                     <SectionBody>
-                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Recently I've been falling in love with going under the hood of technologies I used and learning the inner workings of things.</Text>
+                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
                     </SectionBody>
                 </Section>
                 <Section>
