@@ -1,6 +1,7 @@
 [
     {
         "title": "BURNR — Tech Lead and Backend Engineer",
+        "link": "https://www.joshuadematas.me/?project=BURNR",
         "description": "A social fitness platform built primarily in Go.",
         "bullets": [
             "Led backend design, service boundaries, and tech stack decisions.",
@@ -13,6 +14,7 @@
     {
         "title": "Garden Observer — Real-time 3D Robot Visualization ",
         "description": "A full-stack web app to monitor live and simulated robot lawnmowers in 3D.",
+        "link": "https://www.joshuadematas.me/?project=Garden%20Observer",
         "bullets": [
             "Combined Unity Wasm for 3D rendering with Blazor for UI and control layer.",
             "Parsed SVG layouts to generate meshes for 3D environments.",
@@ -23,6 +25,7 @@
     {
         "title": "Coconut — Reverse proxy SSH HTTP tunnel",
         "description": "An HTTP tunnel over SSH in Go (similar to Ngrok), using only standard libraries.",
+        "link": "https://www.joshuadematas.me/?project=Coconut",
         "bullets": [
             "Designed reverse proxy routing based on subdomains and SSH channels.",
             "Added multiplexed and dedicated tunnels to handle websockets and long-lived connections.",
@@ -33,6 +36,7 @@
     {
         "title": "Cinnamon — Media Stashing Server and Extension",
         "description": "Created a self-hosted service to capture and store HLS video streams.",
+        "link": "https://www.joshuadematas.me/?project=Cinnamon",
         "bullets": [
             "Built a Go backend using FFmpeg to convert and stash videos.",
             "Integrated MinIO (S3 compatible) storage and built a lightweight web UI.",

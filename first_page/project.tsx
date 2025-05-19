@@ -1,6 +1,7 @@
 import React from "npm:react"
 import { Text, View } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
+import { MinWidthLink } from "@src/components/MinWidthLink.tsx"
 
 function Project({ children }: { children?: React.JSXElement }) {
     const theme = useTheme()
@@ -16,16 +17,25 @@ function Project({ children }: { children?: React.JSXElement }) {
     )
 }
 
-function ProjectTitle({ title }: { title: string }) {
+function ProjectTitle({ title, link }: { title: string; link: string }) {
+    const theme = useTheme()
     return (
-        <Text
+        <View
             style={{
                 fontSize: 12,
                 fontWeight: "semibold",
             }}
         >
-            {title}
-        </Text>
+            <MinWidthLink
+                src={link}
+                style={{
+                    textDecoration: "none",
+                    color: theme.Neutral,
+                }}
+            >
+                {title}
+            </MinWidthLink>
+        </View>
     )
 }
 
@@ -55,7 +65,12 @@ function ProjectBulletList({ children }: { children?: React.JSXElement }) {
 }
 
 function ProjectBullet({ text }: { text: string }) {
-    return <Text>• {text}</Text>
+    return (
+        <View style={{ flexDirection: "row" }}>
+            <Text>• </Text>
+            <Text>{text}</Text>
+        </View>
+    )
 }
 
 export {

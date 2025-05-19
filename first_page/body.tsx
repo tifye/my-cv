@@ -34,15 +34,15 @@ export function Body() {
                 </Section>
                 <Section>
                     <SectionHeader>
-                        <Text>Projects</Text>
+                        <Text>Noteworthy projects</Text>
                     </SectionHeader>
                     <SectionBody style={{
                         gap: theme.SpacingLarge,
                         flexDirection: "column",
                     }}>
                         {projects.map((project) => (
-                            <Project>
-                                <ProjectTitle title={project.title}/>
+                            <Project key={project.title}>
+                                <ProjectTitle title={project.title} link={project.link} />
                                 <ProjectShortDescription description={project.description}/>
                                 <ProjectBulletList>
                                     {project.bullets.map((bullet) => (
