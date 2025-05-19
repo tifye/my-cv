@@ -33,7 +33,7 @@
         ]
     },
     {
-        "title": "Cinnamon — Self-Hosted Media Server and Browser Extension",
+        "title": "Cinnamon — Self-Hosted Media Server",
         "description": "Created a self-hosted service to capture and store HLS video streams.",
         "link": "https://www.joshuadematas.me/?project=Cinnamon",
         "bullets": [

@@ -91,11 +91,12 @@ export function Body() {
                     <SectionHeader>
                         <Text>Hobbies</Text>
                     </SectionHeader>
-                    <SectionBody>
-                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
+                    <SectionBody style={{ flexDirection: "column", gap: theme.SpacingSmall }}>
+                        <Text>Programming, digital games, board games, and sometimes art.</Text>
+                        <Text>I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
                     </SectionBody>
                 </Section>
-                <Section>
+                {/* <Section>
                     <SectionHeader />
                     <SectionBody style={{ gap: theme.SpacingSmall }}>
                         <Text>Visit my</Text>
@@ -146,6 +147,17 @@ export function Body() {
                                 again for whatever reason
                             </Text>
                         </View>
+                    </SectionBody>
+                </Section> */}
+
+                <Section>
+                    <SectionHeader>
+                        <Text>Currently exploring</Text>
+                    </SectionHeader>
+                    <SectionBody>
+                        <Text>
+                            I am currently exploring <MinWidthLink src="https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html" style={{color: theme.Neutral}}>Deterministic Simulation Testing</MinWidthLink>, a concept I first encountered through <MinWidthLink style={{color: theme.Neutral}} src="https://tigerbeetle.com/">TigerBeetle</MinWidthLink>. The talk <MinWidthLink style={{color: theme.Neutral}} src="https://www.youtube.com/watch?v=4fFDFbi3toc">Testing Distributed Systems w/ Deterministic Simulation</MinWidthLink> sparked my interest and offers great insights.
+                        </Text>
                     </SectionBody>
                 </Section>
             </View>
