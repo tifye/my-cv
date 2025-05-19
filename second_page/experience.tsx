@@ -60,6 +60,9 @@ function ExperienceBlock({ experience }: ExperienceBlockProps) {
                     {experience.tools.map((tool) => (
                         <Badge>
                             <Text>{tool}</Text>
+                            <Text style={{ opacity: 0, display: "none" }}>
+                                ,
+                            </Text>
                         </Badge>
                     ))}
                 </View>

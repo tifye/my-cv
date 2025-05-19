@@ -26,7 +26,7 @@ export function Body() {
                         <Text>
                             Operating at a 
                             <Text style={{fontWeight: "bold"}}> senior level </Text>
-                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools. My engineering perspective helps me create systems that are efficient, maintainable, and empowering for developers.
+                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, always with a focus on performance, clarity, and maintainability.
                         </Text>
                     </SectionBody>
                 </Section>

@@ -8,7 +8,7 @@
         "bullets": [
             "Leading a small team in building a robust platform.",
             "Primarily built around GCP using Terraform.",
-            "Utilizing simulation testing and testing using Testcontainers.",
+            "Using simulation-based and Testcontainers-driven testing to validate system behavior.",
             "Mentoring two junior engineers, supporting their growth through code reviews, architectural discussions, and pair programming."
         ],
         "tools": [
@@ -34,7 +34,7 @@
             "Initially began work on simulation software in Unity.",
             "Later positioned as an internal project incubator, successfully leading four projects from ideation through execution to launch.",
             "Developed internal tools that resolved key pain points and improved workflows across teams.",
-            "Kept high standard of working in a wide range of areas: Blazor, 3D web, Azure Cloud, the nitty-gritty of algorithm optimization and linear algebra, CLI tools, backend and APIs."
+            "Maintained a high standard across diverse domains — from Blazor and 3D web to Azure, algorithm optimization, CLI tools, and backend services."
         ],
         "tools": [
             "Algorithms",
@@ -73,7 +73,7 @@
         "bullets": [
             "Wrote guides on Docker, MS SQL, and iOS.",
             "Mentored over 25 students across two academic years.",
-            "Covered topics including databases, data structures & algorithms, object-oriented programming, NodeJS web development, iOS development, networking programming, and more."
+            "Taught subjects such as databases, data structures and algorithms, OOP, Node.js development, iOS development, and network programming."
         ],
         "tools": [
             "SQL",
