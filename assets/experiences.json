@@ -1,6 +1,6 @@
 [
     {
-        "title": "Tech Lead, Software Engineer",
+        "title": "Tech Lead, Senior Software Engineer",
         "company": "BURNR",
         "date": "2024 - Now",
         "location": "Remote",
@@ -8,7 +8,8 @@
         "bullets": [
             "Leading a small team in building a robust platform.",
             "Primarily built around GCP using Terraform.",
-            "Utilizing simulation testing and testing using Testcontainers."
+            "Utilizing simulation testing and testing using Testcontainers.",
+            "Mentoring two junior engineers, supporting their growth through code reviews, architectural discussions, and pair programming."
         ],
         "tools": [
             "Terraform",
@@ -31,9 +32,9 @@
         "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling.",
         "bullets": [
             "Initially began work on simulation software in Unity.",
-            "Later positioned as an internal project incubator, successfully leading four projects from ideastion through execution to launch.",
+            "Later positioned as an internal project incubator, successfully leading four projects from ideation through execution to launch.",
             "Developed many other tools along side alleviating many internal pain points.",
-            "Kept high standard of wokring in a wide range of areas: Blazor, 3D web, Azure Cloud, the nitty-gritty of algorithm optimization and linear algebra, CLI tools, backend and APIs."
+            "Kept high standard of working in a wide range of areas: Blazor, 3D web, Azure Cloud, the nitty-gritty of algorithm optimization and linear algebra, CLI tools, backend and APIs."
         ],
         "tools": [
             "Algorithms",

@@ -24,7 +24,7 @@ export function Header() {
                         flexGrow: 1,
                     }}
                 >
-                    Golang Engineer
+                    Software Engineer
                 </Text>
                 <View style={{ flexDirection: "row" }}>
                     <Link

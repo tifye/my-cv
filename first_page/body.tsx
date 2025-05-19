@@ -24,11 +24,9 @@ export function Body() {
                     </SectionHeader>
                     <SectionBody>
                         <Text>
-                            I've built backend platforms, HTTP tunnels over SSH,
-                            and CLI tools across varied domains. My broad
-                            engineering perspective helps me design efficient,
-                            maintainable systems. I focus on performance,
-                            clarity, and building tools that empower developers.
+                            Operating at a 
+                            <Text style={{fontWeight: "bold"}}> senior level </Text>
+                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH-based HTTP tunnels, and CLI tools. My broad engineering perspective helps me create efficient, maintainable systems focused on performance, clarity, and developer experience.
                         </Text>
                     </SectionBody>
                 </Section>
@@ -94,7 +92,7 @@ export function Body() {
                         <Text>Hobbies</Text>
                     </SectionHeader>
                     <SectionBody>
-                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Recently I've been falling in love with going under the hood of technologies I used and learn the inner workings of things.</Text>
+                        <Text>Programming, digital games, and board games. I enjoy making random programs and exploring solutions. Recently I've been falling in love with going under the hood of technologies I used and learning the inner workings of things.</Text>
                     </SectionBody>
                 </Section>
                 <Section>
@@ -120,7 +118,7 @@ export function Body() {
                                 Digital notebook
                             </MinWidthLink>
                             <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                it's a bit messy
+                                very casual
                             </Text>
                         </View>
                         <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
@@ -130,7 +128,7 @@ export function Body() {
                                 Portfolio
                             </MinWidthLink>
                             <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                to see more projects
+                                read about projects
                             </Text>
                         </View>
                         <MinWidthLink
