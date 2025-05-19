@@ -31,8 +31,8 @@
         "location": "Huskvarna, Sweden",
         "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling.",
         "bullets": [
-            "Initially began work on simulation software in Unity.",
-            "Later positioned as an internal project incubator, successfully leading four projects from ideation through execution to launch.",
+            "Started with simulation software in Unity, then moved into broader R&D tooling.",
+            "Later positioned as an internal project incubator and successfully led four projects from concept through implementation and launch.",
             "Developed internal tools that resolved key pain points and improved workflows across teams.",
             "Maintained a high standard across diverse domains — from Blazor and 3D web to Azure, algorithm optimization, CLI tools, and backend services."
         ],
@@ -71,7 +71,7 @@
         "location": "Jönköping, Sweden",
         "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework.",
         "bullets": [
-            "Wrote guides on Docker, MS SQL, and iOS.",
+            "Created technical guides on Docker, MS SQL, and iOS development used in student instruction.",
             "Mentored over 25 students across two academic years.",
             "Taught subjects such as databases, data structures and algorithms, OOP, Node.js development, iOS development, and network programming."
         ],

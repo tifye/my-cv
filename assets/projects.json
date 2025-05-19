@@ -23,18 +23,17 @@
         ]
     },
     {
-        "title": "Coconut — Reverse proxy SSH HTTP tunnel",
+        "title": "Coconut — SSH-Based HTTP Tunnel",
         "description": "An HTTP tunnel over SSH in Go (similar to Ngrok), using only standard libraries.",
         "link": "https://www.joshuadematas.me/?project=Coconut",
         "bullets": [
             "Designed reverse proxy routing based on subdomains and SSH channels.",
             "Added multiplexed and dedicated tunnels to handle websockets and long-lived connections.",
-            "Integrated Apple Health syncing and leaderboard ranking based on user goals.",
             "Currently building a production-ready version with full monitoring and tests."
         ]
     },
     {
-        "title": "Cinnamon — Media Stashing Server and Extension",
+        "title": "Cinnamon — Self-Hosted Media Server and Browser Extension",
         "description": "Created a self-hosted service to capture and store HLS video streams.",
         "link": "https://www.joshuadematas.me/?project=Cinnamon",
         "bullets": [

@@ -61,7 +61,7 @@ function ExperienceBlock({ experience }: ExperienceBlockProps) {
                         <Badge>
                             <Text>{tool}</Text>
                             <Text style={{ opacity: 0, display: "none" }}>
-                                ,
+                                ,{" "}
                             </Text>
                         </Badge>
                     ))}
