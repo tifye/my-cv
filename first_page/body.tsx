@@ -107,7 +107,7 @@ export function Body() {
                                 GitHub
                             </MinWidthLink>
                             <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                too many unfinished projects
+                                it's green
                             </Text>
                         </View>
                         <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
