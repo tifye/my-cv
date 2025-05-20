@@ -2,6 +2,7 @@ import React from "npm:react"
 import { Text, View } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
 import { MinWidthLink } from "@src/components/MinWidthLink.tsx"
+import { ExternalLinkIcon } from "@src/components/icons/ExternalLink.tsx"
 
 function Project({ children }: { children?: React.JSXElement }) {
     const theme = useTheme()
@@ -20,22 +21,20 @@ function Project({ children }: { children?: React.JSXElement }) {
 function ProjectTitle({ title, link }: { title: string; link: string }) {
     const theme = useTheme()
     return (
-        <View
+        <MinWidthLink
+            src={link}
             style={{
                 fontSize: 12,
                 fontWeight: "semibold",
+                textDecoration: "none",
+                color: theme.Neutral,
+                flexDirection: "row",
+                gap: theme.SpacingExtraSmall,
             }}
         >
-            <MinWidthLink
-                src={link}
-                style={{
-                    textDecoration: "none",
-                    color: theme.Neutral,
-                }}
-            >
-                {title}
-            </MinWidthLink>
-        </View>
+            <Text>{title}</Text>
+            <ExternalLinkIcon style={{ fill: theme.Neutral }} />
+        </MinWidthLink>
     )
 }
 
