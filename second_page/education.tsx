@@ -54,12 +54,11 @@ function EducationBlock() {
                             Jönköping University
                         </Text>
                         <Text style={{ fontSize: 8 }}>
-                            Selected to compete in a coding challenge among the
-                            top-performing students at Jönköping University,
-                            where I won a scholarship of 15,000 Kr. The
-                            challenge involved creating a full-stack admin
-                            system, which I developed using React, Node.js
-                            NestJS, Redis, and PostgreSQL.
+                            Chosen as one of the top-performing students to
+                            compete in a coding challenge at Jönköping
+                            University. Awarded a 15,000 SEK scholarship for
+                            building a full-stack admin system with React,
+                            Node.js (NestJS), Redis, and PostgreSQL.
                         </Text>
                     </SectionBody>
                 </Section>

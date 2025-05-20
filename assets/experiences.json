@@ -1,30 +1,88 @@
 [
     {
-        "title": "Tech Lead, Software Engineer",
+        "title": "Tech Lead, Senior Software Engineer",
         "company": "BURNR",
         "date": "2024 - Now",
         "location": "Remote",
-        "note": "A founder and tech lead of fitness oriented social media app BURNR."
+        "note": "A founder and tech lead of fitness oriented social media app BURNR.",
+        "bullets": [
+            "Leading a small team in building a robust platform.",
+            "Primarily built around GCP using Terraform.",
+            "Using simulation-based and Testcontainers-driven testing to validate system behavior.",
+            "Mentoring two junior engineers, supporting their growth through code reviews, architectural discussions, and pair programming."
+        ],
+        "tools": [
+            "Terraform",
+            "PostgreSQL",
+            "Firestore",
+            "Redis",
+            "Pub/Sub",
+            "GCP",
+            "Go",
+            "OpenTelemetry",
+            "Prometheus",
+            "Grafana"
+        ]
     },
     {
         "title": "Software Engineer",
         "company": "Husqvarna Group, Robotics R&D",
         "date": "2022 - 2024",
         "location": "Huskvarna, Sweden",
-        "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling."
+        "note": "Husqvarna Group's Robotics R&D department to developing simulation software and tooling.",
+        "bullets": [
+            "Started with simulation software in Unity, then moved into broader R&D tooling.",
+            "Later positioned as an internal project incubator and successfully led four projects from concept through implementation and launch.",
+            "Developed internal tools that resolved key pain points and improved workflows across teams.",
+            "Maintained a high standard across diverse domains — from Blazor and 3D web to Azure, algorithm optimization, CLI tools, and backend services."
+        ],
+        "tools": [
+            "Algorithms",
+            "Blazor",
+            "C#",
+            "DotNet",
+            "Unity",
+            "Azure",
+            "Go"
+        ]
     },
     {
         "title": "Software Engineer",
         "company": "Jönköping University, ROL Ergo",
         "date": "2021",
         "location": "Jönköping, Sweden",
-        "note": "Hired by contract through the university to work with ROL Ergo on a research project."
+        "note": "Hired by contract through the university to work with ROL Ergo on a research project.",
+        "bullets": [
+            "Collected heat and motion sensor data that was visualized in a web UI.",
+            "Enhanced sensor data usability by processing over 15 sensors in real time."
+        ],
+        "tools": [
+            "Socket.IO",
+            "Vue",
+            "Express.js",
+            "NodeJS",
+            "PostgreSQL"
+        ]
     },
     {
         "title": "Laboratory Engineer",
         "company": "Jönköping University",
         "date": "2020 - 2022 ",
         "location": "Jönköping, Sweden",
-        "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework."
+        "note": "Hired by the university to support teaching and mentoring in 8+ engineering courses; provided paid assistance to students with labs, technical exercises, and coursework.",
+        "bullets": [
+            "Created technical guides on Docker, MS SQL, and iOS development used in student instruction.",
+            "Mentored over 25 students across two academic years.",
+            "Taught subjects such as databases, data structures and algorithms, OOP, Node.js development, iOS development, and network programming."
+        ],
+        "tools": [
+            "SQL",
+            "NodeJS",
+            "C++",
+            "Swift",
+            "Go",
+            "AWS",
+            "Docker"
+        ]
     }
 ]

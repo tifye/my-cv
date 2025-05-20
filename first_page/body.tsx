@@ -4,13 +4,13 @@ import { Section, SectionBody, SectionHeader } from "@components/section.tsx"
 import { Project, ProjectTitle } from "./project.tsx"
 import projects  from "@assets/projects.json" with {type: "json"}
 import references from "@assets/references.json" with {type: "json"}
-import experiences from "@assets/experiences.json" with {type: "json"}
 import { ProjectShortDescription } from "./project.tsx";
 import { ProjectBulletList } from "./project.tsx";
 import { ProjectBullet } from "./project.tsx";
 import { ReferenceBlock } from "./reference.tsx";
 import { Separator } from "@components/Separator.tsx";
-import { ExperienceBlock } from "./experience.tsx";
+import { TecnicalSkillsBlock } from "@src/first_page/technical_skills.tsx";
+import { MinWidthLink } from "@src/components/MinWidthLink.tsx";
 
 export function Body() {
     const theme = useTheme()
@@ -24,11 +24,9 @@ export function Body() {
                     </SectionHeader>
                     <SectionBody>
                         <Text>
-                            I've built backend platforms, HTTP tunnels over SSH,
-                            and CLI tools across varied domains. My broad
-                            engineering perspective helps me design efficient,
-                            maintainable systems. I focus on performance,
-                            clarity, and building tools that empower developers.
+                            Operating at a 
+                            <Text style={{fontWeight: "bold"}}> senior level </Text>
+                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, always with a focus on performance, clarity, and maintainability.
                         </Text>
                     </SectionBody>
                 </Section>
@@ -41,7 +39,7 @@ export function Body() {
                         flexDirection: "column",
                     }}>
                         {projects.map((project) => (
-                            <Project key={project.title}>
+                            <Project>
                                 <ProjectTitle title={project.title} link={project.link} />
                                 <ProjectShortDescription description={project.description}/>
                                 <ProjectBulletList>
@@ -88,25 +86,103 @@ export function Body() {
                         ))}
                     </SectionBody>
                 </Section>
+                <TecnicalSkillsBlock skills={skills} />
                 <Section>
                     <SectionHeader>
-                        <Text>Experience</Text>
+                        <Text>Hobbies</Text>
                     </SectionHeader>
-                    <SectionBody style={{ gap: theme.SpacingMedium }}>
-                        {experiences.map((experience, idx) => (
-                            <>
-                                {idx !== 0 && (
-                                    <Separator />
-                                )}
-                                <ExperienceBlock experience={experience}/>
-                            </>
-                        ))}
+                    <SectionBody style={{ flexDirection: "column", gap: theme.SpacingSmall }}>
+                        <Text>Programming, digital games, board games, and sometimes art.</Text>
+                        <Text>I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
+                    </SectionBody>
+                </Section>
+                {/* <Section>
+                    <SectionHeader />
+                    <SectionBody style={{ gap: theme.SpacingSmall }}>
+                        <Text>Visit my</Text>
+                        
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://github.com/tifye"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                GitHub
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                it's green
+                            </Text>
+                        </View>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            
+                            <MinWidthLink
+                                src="https://publish.obsidian.md/tifye/Welcome"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                Digital notebook
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                very casual
+                            </Text>
+                        </View>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://www.joshuadematas.me/"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                Portfolio
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                read about projects
+                            </Text>
+                        </View>
+                        <MinWidthLink
+                            src="https://www.linkedin.com/in/joshua-de-matas-18bb30206/"
+                            style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                            LinkedIn
+                        </MinWidthLink>
+                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
+                            <MinWidthLink
+                                src="https://www.joshuadematas.me/cv.pdf"
+                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
+                                CV
+                            </MinWidthLink>
+                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
+                                again for whatever reason
+                            </Text>
+                        </View>
+                    </SectionBody>
+                </Section> */}
+
+                <Section>
+                    <SectionHeader>
+                        <Text>Currently exploring</Text>
+                    </SectionHeader>
+                    <SectionBody>
+                        <Text>
+                            I am currently exploring <MinWidthLink src="https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html" style={{color: theme.Neutral}}>Deterministic Simulation Testing</MinWidthLink>, a concept I first encountered through <MinWidthLink style={{color: theme.Neutral}} src="https://tigerbeetle.com/">TigerBeetle</MinWidthLink>. The talk <MinWidthLink style={{color: theme.Neutral}} src="https://www.youtube.com/watch?v=4fFDFbi3toc">Testing Distributed Systems w/ Deterministic Simulation</MinWidthLink> sparked my interest and offers great insights.
+                        </Text>
                     </SectionBody>
                 </Section>
             </View>
         </View>
     )
 }
+
+const skills = [
+    "Go",
+    "Docker",
+    "GCP",
+    "React",
+    "Terraform",
+    "PostgreSQL",
+    "Redis",
+    "Redpanda",
+    "OpenTelemetry",
+    "C#",
+    "Sqlite",
+    "Unity",
+    "Javascript",
+    "S3 storage",
+    "Github",
+    "SQL",
+]
 
 function styles(theme: Theme) {
     return StyleSheet.create({

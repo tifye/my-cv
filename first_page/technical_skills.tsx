@@ -35,6 +35,7 @@ function TecnicalSkillsBlock({ skills }: TecnicalSkillsBlockProps) {
                         }}
                     >
                         <Text>{skill}</Text>
+                        <Text style={{ opacity: 0, display: "none" }}>, </Text>
                     </View>
                 ))}
             </SectionBody>

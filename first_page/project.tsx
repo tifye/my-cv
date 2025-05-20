@@ -57,6 +57,7 @@ function ProjectBulletList({ children }: { children?: React.JSXElement }) {
         <View
             style={{
                 gap: theme.SpacingSmall,
+                flexDirection: "column",
             }}
         >
             {children && children}
