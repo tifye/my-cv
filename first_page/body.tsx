@@ -25,7 +25,7 @@ export function Body() {
                     <SectionBody>
                         <Text>
                             Operating at a 
-                            <Text style={{fontWeight: "bold"}}> senior level </Text>
+                            <Text style={{fontWeight: "bold"}}> high level </Text>
                              — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, always with a focus on performance, clarity, and maintainability.
                         </Text>
                     </SectionBody>
