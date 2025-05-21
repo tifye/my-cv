@@ -78,12 +78,13 @@ export function Body() {
                     <SectionBody style={{ gap: theme.SpacingMedium }}>
                         {references.map((reference, idx) => (
                             <>
-                                {idx !== 0 && (
+                            {idx !== 0 && (
                                     <Separator />
                                 )}
                                 <ReferenceBlock reference={reference}/>
                             </>
                         ))}
+                        <Text style={{ marginTop: theme.SpacingLarge }}>Contact details for references available upon {"\n"}request.</Text>
                     </SectionBody>
                 </Section>
                 <TecnicalSkillsBlock skills={skills} />

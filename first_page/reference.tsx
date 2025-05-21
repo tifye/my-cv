@@ -1,6 +1,5 @@
 import { Text, View } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
-import { MinWidthLink } from "../components/MinWidthLink.tsx"
 
 type Reference = {
     name: string
@@ -22,13 +21,13 @@ type ReferenceBlockProps = {
 
 function ReferenceBlock({ reference }: ReferenceBlockProps) {
     const theme = useTheme()
-    const links = Object.entries(reference.links)
-        .filter((entry) => {
-            return entry[1] !== undefined
-        })
-        .map((entry) => {
-            return { text: entry[0], link: entry[1]! }
-        })
+    // const links = Object.entries(reference.links)
+    //     .filter((entry) => {
+    //         return entry[1] !== undefined
+    //     })
+    //     .map((entry) => {
+    //         return { text: entry[0], link: entry[1]! }
+    //     })
     return (
         <View
             style={{
@@ -50,7 +49,7 @@ function ReferenceBlock({ reference }: ReferenceBlockProps) {
                     gap: 2,
                 }}
             >
-                <MinWidthLink
+                {/* <MinWidthLink
                     src={`mailto:${reference.email}`}
                     style={{
                         color: theme.Primary,
@@ -80,7 +79,7 @@ function ReferenceBlock({ reference }: ReferenceBlockProps) {
                     >
                         {reference.phone.text}
                     </MinWidthLink>
-                )}
+                )} */}
                 <Text>{reference.note}</Text>
             </View>
         </View>
