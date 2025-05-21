@@ -59,7 +59,7 @@ export function Body() {
                     marginTop: theme.SpacingLarge
                 }}>
                     <Text style={{ alignSelf: "flex-end" }}>
-                        Explore more of my work at{" "}
+                        Explore more projects at{" "}
                         <Link src="https://www.joshuadematas.me" style={{
                             color: theme.Primary,
                             fontWeight: "semibold",
