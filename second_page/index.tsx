@@ -23,18 +23,19 @@ function SecondPage() {
                     <Text>Experience</Text>
                 </SectionHeader>
                 <SectionBody style={{ 
-                        gap: theme.SpacingLarge,
-                        flexDirection: "column", 
-                    }}>
+                    gap: theme.SpacingLarge,
+                    flexDirection: "column", 
+                }}>
                     <Text>Programming since 2015, professional since 2020. Software engineering is both my profession and creative outlet.</Text>
-                    <Separator />
-                    {experiences.map((experience) => (
+                    {experiences.map((experience, idx) => (
                         <>
+                            {idx !== 0 && (
+                                <Separator  />
+                            )}
                             <ExperienceBlock experience={experience}/>
-                            <Separator />
+                            
                         </>
                     ))}
-                    <Text>I'm deeply excited about programming — it's more than a job; it's what I do for fun. I love building systems that are useful, durable, and a joy to maintain.</Text>
                 </SectionBody>
             </Section>
             <EducationBlock />

@@ -38,8 +38,11 @@ export function Body() {
                         gap: theme.SpacingLarge,
                         flexDirection: "column",
                     }}>
-                        {projects.map((project) => (
+                        {projects.map((project, idx) => (
                             <Project>
+                                {idx !== 0 && (
+                                    <Separator style={{ marginBottom: theme.SpacingMedium }} />
+                                )}
                                 <ProjectTitle title={project.title} link={project.link} />
                                 <ProjectShortDescription description={project.description}/>
                                 <ProjectBulletList>
@@ -47,7 +50,6 @@ export function Body() {
                                         <ProjectBullet text={bullet} />
                                     ))}
                                 </ProjectBulletList>
-                                <Separator style={{ marginTop: theme.SpacingMedium }}/>
                             </Project>
                         ))}
                     </SectionBody>
@@ -78,7 +80,7 @@ export function Body() {
                     <SectionBody style={{ gap: theme.SpacingMedium }}>
                         {references.map((reference, idx) => (
                             <>
-                            {idx !== 0 && (
+                                {idx !== 0 && (
                                     <Separator />
                                 )}
                                 <ReferenceBlock reference={reference}/>
