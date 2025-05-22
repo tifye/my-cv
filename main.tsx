@@ -10,7 +10,6 @@ function CVDocument() {
     return (
         <Document style={{ fontFamily: "manrope" }}>
             <Page size="A4">
-                <HiddenKeyWords />
                 <Header />
                 <View style={{ flexGrow: 1 }}>
                     <Body />
@@ -18,6 +17,7 @@ function CVDocument() {
             </Page>
             <Page size="A4">
                 <SecondPage />
+                <HiddenKeyWords />
             </Page>
         </Document>
     )

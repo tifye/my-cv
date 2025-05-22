@@ -5,9 +5,13 @@ function HiddenKeyWords() {
     return (
         <View
             style={{
-                display: "none",
+                display: "flex",
                 opacity: 0,
+                position: "absolute",
+                left: "-150%",
+                top: "-150%"         
             }}
+            debug
         >
             <Text>{keywordsStr}</Text>
         </View>
