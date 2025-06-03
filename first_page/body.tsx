@@ -97,6 +97,9 @@ export function Body() {
                                 <Text>Swedish</Text>
                             </Badge>
                         </View>
+                        <View style={{ marginTop: theme.SpacingSmall }}>
+                            <Text>I am born in the Caribbean and moved to Sweden in 2007.</Text>
+                        </View>
                     </SectionBody>
                 </Section>
                 <TecnicalSkillsBlock skills={skills} />
