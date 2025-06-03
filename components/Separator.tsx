@@ -1,23 +1,20 @@
-import React from "npm:react"
 import { View, ViewProps } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
 
-const Separator = React.forwardRef<View, ViewProps>(_Separator)
-function _Separator(
-    { style, ...props }: ViewProps,
-    ref: React.forwardedRef<View>
-) {
+function Separator({ style, ...props }: ViewProps) {
     const theme = useTheme()
+    if (!Array.isArray(style)) {
+        style = [style ?? {}]
+    }
     return (
         <View
-            ref={ref}
             style={[
                 {
                     borderBottom: 1,
                     borderColor: theme.NeutralContent,
                     borderStyle: "dashed",
                 },
-                style,
+                ...style,
             ]}
             {...props}
         />

@@ -46,19 +46,17 @@ function Section({ children }: SectionProps) {
     )
 }
 
-const SectionBody = React.forwardRef<View, ViewProps>(_SectionBody)
-function _SectionBody(
-    { style, ...props }: ViewProps,
-    ref: React.forwardedRef<View>
-) {
+function SectionBody({ style, ...props }: ViewProps) {
+    if (!Array.isArray(style)) {
+        style = [style ?? {}]
+    }
     return (
         <View
-            ref={ref}
             style={[
                 {
                     fontSize: 8,
                 },
-                style,
+                ...style,
             ]}
             {...props}
         />

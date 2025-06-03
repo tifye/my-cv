@@ -1,13 +1,13 @@
-import React from "react"
 import { View, ViewProps } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
 
-const Badge = React.forwardRef<View, ViewProps>(_Badge)
-function _Badge({ style, ...props }: ViewProps, ref: React.ForwardedRef<View>) {
+function Badge({ style, ...props }: ViewProps) {
     const theme = useTheme()
+    if (!Array.isArray(style)) {
+        style = [style ?? {}]
+    }
     return (
         <View
-            ref={ref}
             style={[
                 {
                     paddingVertical: theme.SpacingExtraSmall,
@@ -17,7 +17,7 @@ function _Badge({ style, ...props }: ViewProps, ref: React.ForwardedRef<View>) {
                     borderRadius: 999,
                     backgroundColor: theme.Base100,
                 },
-                style,
+                ...style,
             ]}
             {...props}
         />

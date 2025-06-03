@@ -1,11 +1,9 @@
-import React from "react"
 import { View, Link, LinkProps } from "npm:@react-pdf/renderer"
 
-const MinWidthLink = React.forwardRef<Link, LinkProps>(_MinWidthLink)
-function _MinWidthLink(
-    { debug, style, ...props }: LinkProps,
-    ref: React.forwardedRef<Link>
-) {
+function MinWidthLink({ debug, style, ...props }: LinkProps) {
+    if (!Array.isArray(style)) {
+        style = [style ?? {}]
+    }
     return (
         <View
             debug={debug}
@@ -16,8 +14,7 @@ function _MinWidthLink(
         >
             <Link
                 debug={debug}
-                ref={ref}
-                style={[style, { flexShrink: 1 }]}
+                style={[{ flexShrink: 1 }, ...style]}
                 {...props}
             ></Link>
         </View>
