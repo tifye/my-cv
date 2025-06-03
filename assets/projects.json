@@ -1,15 +1,16 @@
 [
     {
-        "title": "BURNR — Tech Lead and Backend Engineer",
+        "title": "BURNR — Tech lead, Social fitness platform",
         "link": "https://www.joshuadematas.me/?project=BURNR",
-        "description": "A social fitness platform built primarily in Go.",
+        "description": "A social fitness platform built primarily in Go and React Native.",
         "bullets": [
             "Led backend design, service boundaries, and tech stack decisions.",
             "Designed hybrid storage using PostgreSQL, Firestore, and Cloud Storage.",
             "Integrated Apple Health syncing and leaderboard ranking based on user goals.",
             "Upgraded caching and pub/sub with Dragonfly and Redpanda.",
             "Deployed backend on self-hosted VPS using Docker Stack/Swarm."
-        ]
+        ],
+        "isHobby": false
     },
     {
         "title": "Garden Observer — Real-time 3D Robot Visualization",
@@ -20,7 +21,8 @@
             "Parsed SVG layouts to generate meshes for 3D environments.",
             "Used an internal event hub for real-time robot telemetry, updating position in 3D space.",
             "Created a Blazor-to-Unity component bridge (akin to custom React renderer)."
-        ]
+        ],
+        "isHobby": false
     },
     {
         "title": "Coconut — SSH-Based HTTP Tunnel",
@@ -30,7 +32,8 @@
             "Designed reverse proxy routing based on subdomains and SSH channels.",
             "Added multiplexed and dedicated tunnels to handle websockets and long-lived connections.",
             "Currently building a production-ready version with full monitoring and tests."
-        ]
+        ],
+        "isHobby": true
     },
     {
         "title": "Cinnamon — Self-Hosted Media Server",
@@ -40,6 +43,7 @@
             "Built a Go backend using FFmpeg to convert and stash videos.",
             "Integrated MinIO (S3 compatible) storage and built a lightweight web UI.",
             "Developed a custom browser protocol (cinnamon://) to launch downloads from the web."
-        ]
+        ],
+        "isHobby": true
     }
 ]

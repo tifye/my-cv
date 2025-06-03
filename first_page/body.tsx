@@ -45,7 +45,7 @@ export function Body() {
                                     <Separator style={{ marginBottom: theme.SpacingMedium }} />
                                 )}
                                 <ProjectTitle title={project.title} link={project.link} />
-                                <ProjectShortDescription description={project.description}/>
+                                <ProjectShortDescription isHobby={project.isHobby} description={project.description}/>
                                 <ProjectBulletList>
                                     {project.bullets.map((bullet) => (
                                         <ProjectBullet text={bullet} />
@@ -59,7 +59,7 @@ export function Body() {
                     fontSize: 8,
                     flexGrow: 1,
                     flexDirection: "row",
-                    marginTop: theme.SpacingLarge
+                    marginTop: theme.SpacingMedium
                 }}>
                     <Text style={{ alignSelf: "flex-end" }}>
                         Explore more projects at{" "}

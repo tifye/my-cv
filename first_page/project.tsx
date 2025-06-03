@@ -38,15 +38,32 @@ function ProjectTitle({ title, link }: { title: string; link: string }) {
     )
 }
 
-function ProjectShortDescription({ description }: { description: string }) {
+function ProjectShortDescription({
+    description,
+    isHobby,
+}: {
+    description: string
+    isHobby: boolean
+}) {
+    const theme = useTheme()
     return (
-        <Text
-            style={{
-                fontWeight: "bold",
-            }}
-        >
-            {description}
-        </Text>
+        <View>
+            <Text
+                style={{
+                    fontWeight: "bold",
+                }}
+            >
+                {description}
+            </Text>
+            <Text
+                style={{
+                    fontWeight: "light",
+                    marginTop: theme.SpacingExtraSmall,
+                }}
+            >
+                {isHobby ? "hobby project" : "professional project"}
+            </Text>
+        </View>
     )
 }
 
