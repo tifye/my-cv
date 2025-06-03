@@ -98,7 +98,7 @@ export function Body() {
                             </Badge>
                         </View>
                         <View style={{ marginTop: theme.SpacingSmall }}>
-                            <Text>I am born in the Caribbean and moved to Sweden in 2007.</Text>
+                            <Text>Born in the  <Text style={{fontWeight:"bold"}}>Caribbean</Text>, moved to <Text style={{fontWeight:"bold"}}>Sweden</Text> in <Text style={{fontWeight:"bold"}}>2007</Text>.</Text>
                         </View>
                     </SectionBody>
                 </Section>
