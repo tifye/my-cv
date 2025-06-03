@@ -80,11 +80,10 @@ export function Body() {
                     </SectionHeader>
                     <SectionBody>
                         <View style={{ 
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: theme.SpacingSmall,
-                            }}
-                        >
+                            flexDirection: "row",
+                            alignItems: "center",
+                            gap: theme.SpacingSmall,
+                        }}>
                             <View>
                                 <Text>Bilingual in</Text>
                             </View>
@@ -106,8 +105,30 @@ export function Body() {
                         <Text>Hobbies</Text>
                     </SectionHeader>
                     <SectionBody style={{ flexDirection: "column", gap: theme.SpacingSmall }}>
-                        <Text>Programming, digital games, board games, and sometimes art.</Text>
-                        <Text>I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
+                        <View style={{ 
+                            flexDirection: "row",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                            gap: theme.SpacingSmall,
+                        }}>
+                            <Badge>
+                                <Text>
+                                    Programming
+                                </Text>
+                            </Badge>
+                            <Badge>
+                                <Text>
+                                    Games
+                                </Text>
+                            </Badge>
+                            and sometimes
+                            <Badge>
+                                <Text>
+                                    Art
+                                </Text>
+                            </Badge>
+                        </View>
+                        <Text>I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use and exploring how things really work.</Text>
                     </SectionBody>
                 </Section>
                 <Section>
