@@ -1,7 +1,8 @@
+import React from "react"
 import { View, ViewProps } from "npm:@react-pdf/renderer"
 import { useTheme } from "@src/theme.ts"
 
-function Separator({ style, ...props }: ViewProps) {
+function Separator({ style, ...props }: React.PropsWithChildren<ViewProps>) {
     const theme = useTheme()
     if (!Array.isArray(style)) {
         style = [style ?? {}]

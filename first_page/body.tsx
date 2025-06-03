@@ -11,6 +11,7 @@ import { ReferenceBlock } from "./reference.tsx";
 import { Separator } from "@components/Separator.tsx";
 import { TecnicalSkillsBlock } from "@src/first_page/technical_skills.tsx";
 import { MinWidthLink } from "@src/components/MinWidthLink.tsx";
+import { Badge } from "@src/components/Badge.tsx";
 
 export function Body() {
     const theme = useTheme()
@@ -25,7 +26,7 @@ export function Body() {
                     <SectionBody>
                         <Text>
                             Operating at a 
-                            <Text style={{fontWeight: "bold"}}> high level </Text>
+                            <Text style={{ fontWeight: "bold" }}> high level </Text>
                              — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, always with a focus on performance, clarity, and maintainability.
                         </Text>
                     </SectionBody>
@@ -75,18 +76,28 @@ export function Body() {
             <View style={style.aside}>
                 <Section>
                     <SectionHeader>
-                        <Text>References</Text>
+                        <Text>Languages</Text>
                     </SectionHeader>
-                    <SectionBody style={{ gap: theme.SpacingMedium }}>
-                        {references.map((reference, idx) => (
-                            <>
-                                {idx !== 0 && (
-                                    <Separator />
-                                )}
-                                <ReferenceBlock reference={reference}/>
-                            </>
-                        ))}
-                        <Text style={{ marginTop: theme.SpacingLarge }}>Contact details for references available upon {"\n"}request.</Text>
+                    <SectionBody>
+                        <View style={{ 
+                                flexDirection: "row",
+                                alignItems: "center",
+                                gap: theme.SpacingSmall,
+                            }}
+                        >
+                            <View>
+                                <Text>Bilingual in</Text>
+                            </View>
+                            <Badge>
+                                <Text>English</Text>
+                            </Badge>
+                            <View>
+                                <Text>and</Text>
+                            </View>
+                            <Badge>
+                                <Text>Swedish</Text>
+                            </Badge>
+                        </View>
                     </SectionBody>
                 </Section>
                 <TecnicalSkillsBlock skills={skills} />
@@ -99,60 +110,6 @@ export function Body() {
                         <Text>I enjoy making random programs and exploring solutions. Lately, I've been diving deeper into the internals of the tools I use — exploring how things really work.</Text>
                     </SectionBody>
                 </Section>
-                {/* <Section>
-                    <SectionHeader />
-                    <SectionBody style={{ gap: theme.SpacingSmall }}>
-                        <Text>Visit my</Text>
-                        
-                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
-                            <MinWidthLink
-                                src="https://github.com/tifye"
-                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
-                                GitHub
-                            </MinWidthLink>
-                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                it's green
-                            </Text>
-                        </View>
-                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
-                            
-                            <MinWidthLink
-                                src="https://publish.obsidian.md/tifye/Welcome"
-                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
-                                Digital notebook
-                            </MinWidthLink>
-                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                very casual
-                            </Text>
-                        </View>
-                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
-                            <MinWidthLink
-                                src="https://www.joshuadematas.me/"
-                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
-                                Portfolio
-                            </MinWidthLink>
-                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                read about projects
-                            </Text>
-                        </View>
-                        <MinWidthLink
-                            src="https://www.linkedin.com/in/joshua-de-matas-18bb30206/"
-                            style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
-                            LinkedIn
-                        </MinWidthLink>
-                        <View style={{ flexDirection: "row", gap: theme.SpacingSmall }}>
-                            <MinWidthLink
-                                src="https://www.joshuadematas.me/cv.pdf"
-                                style={{ textDecoration: "none", color: theme.Neutral, fontWeight: "bold", fontSize: 16, }}>
-                                CV
-                            </MinWidthLink>
-                            <Text style={{ alignSelf: "flex-end", fontSize: 7 }}>
-                                again for whatever reason
-                            </Text>
-                        </View>
-                    </SectionBody>
-                </Section> */}
-
                 <Section>
                     <SectionHeader>
                         <Text>Currently exploring</Text>
@@ -161,6 +118,22 @@ export function Body() {
                         <Text>
                             I am currently exploring <MinWidthLink src="https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html" style={{color: theme.Neutral}}>Deterministic Simulation Testing</MinWidthLink>, a concept I first encountered through <MinWidthLink style={{color: theme.Neutral}} src="https://tigerbeetle.com/">TigerBeetle</MinWidthLink>. The talk <MinWidthLink style={{color: theme.Neutral}} src="https://www.youtube.com/watch?v=4fFDFbi3toc">Testing Distributed Systems w/ Deterministic Simulation</MinWidthLink> sparked my interest and offers great insights.
                         </Text>
+                    </SectionBody>
+                </Section>
+                <Section>
+                    <SectionHeader>
+                        <Text>References</Text>
+                    </SectionHeader>
+                    <SectionBody style={{ gap: theme.SpacingMedium }}>
+                        {references.map((reference, idx) => (
+                            <>
+                                {idx !== 0 && (
+                                    <Separator />
+                                )}
+                                <ReferenceBlock reference={reference}/>
+                            </>
+                        ))}
+                        <Text style={{ marginTop: theme.SpacingLarge }}>Contact details for references available upon {"\n"}request.</Text>
                     </SectionBody>
                 </Section>
             </View>

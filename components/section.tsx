@@ -46,7 +46,7 @@ function Section({ children }: SectionProps) {
     )
 }
 
-function SectionBody({ style, ...props }: ViewProps) {
+function SectionBody({ style, ...props }: React.PropsWithChildren<ViewProps>) {
     if (!Array.isArray(style)) {
         style = [style ?? {}]
     }

@@ -1,6 +1,11 @@
+import React from "react"
 import { View, Link, LinkProps } from "npm:@react-pdf/renderer"
 
-function MinWidthLink({ debug, style, ...props }: LinkProps) {
+function MinWidthLink({
+    debug,
+    style,
+    ...props
+}: React.PropsWithChildren<LinkProps>) {
     if (!Array.isArray(style)) {
         style = [style ?? {}]
     }
