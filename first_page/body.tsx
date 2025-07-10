@@ -27,7 +27,7 @@ export function Body() {
                         <Text>
                             Operating at a 
                             <Text style={{ fontWeight: "bold" }}> high level </Text>
-                             — leading projects, designing architecture, and building tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, always with a focus on performance, clarity, and maintainability.
+                             I lead projects, design architecture, and build tools across domains. I've built backend platforms, SSH tunnels, and CLI tools, with a focus on performance, maintainability, and love.
                         </Text>
                     </SectionBody>
                 </Section>
