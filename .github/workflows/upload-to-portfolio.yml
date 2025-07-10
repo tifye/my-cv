@@ -47,8 +47,8 @@ jobs:
 
       - name: Commit and push CV
         run: |
-          ls
-          cp ../cv-repo/cv.pdf public/cv.pdf
+          cp cv-repo/cv.pdf portfolio-repo/public/cv.pdf
+          cd portfolio-repo
           git config user.name "github-actions[bot](my-cv)"
           git config user.email "dematasjoshua@hotmail.com"
           git add .
