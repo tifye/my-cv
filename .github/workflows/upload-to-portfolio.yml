@@ -35,7 +35,7 @@ jobs:
       - name: Build CV PDF
         run: |
           cd cv-repo
-          deno run --allow-env --allow-write --allow-read cv-repo/main.tsx
+          deno run --allow-env --allow-write --allow-read main.tsx
           cd ..
           
       - name: Commit to portfolio
