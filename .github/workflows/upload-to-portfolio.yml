@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: tifye/personal-site
-          path: portolio-repo
+          path: portfolio-repo
           token: ${{ secrets.GH_PAT }}
 
       - name: Commit and push CV
