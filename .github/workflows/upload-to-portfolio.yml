@@ -1,0 +1,63 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow will install Deno then run `deno lint` and `deno test`.
+# For more information see: https://github.com/denoland/setup-deno
+
+name: Upload to portfolio
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+permissions:
+  contents: read
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout my-cv
+        uses: actions/checkout@v4
+        with:
+          path: cv-repo
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
+        with:
+          deno-version: v2.x
+          
+      - name: Build CV PDF
+        run: |
+          cd cv-repo
+          deno run --allow-env --allow-write --allow-read main.tsx
+          cd ..
+          
+      - name: Commit to portfolio
+        uses: actions/checkout@v4
+        with:
+          repository: tifye/personal-site
+          path: portfolio-repo
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Commit and push CV
+        run: |
+          cp cv-repo/cv.pdf portfolio-repo/public/cv.pdf
+          cd portfolio-repo
+          git config user.name "github-actions[bot](my-cv)"
+          git config user.email "dematasjoshua@hotmail.com"
+          git add .
+          git commit -m "feat: updated CV"
+          git push
+
+        
+      
+        
+        
+    
+          
