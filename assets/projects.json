@@ -36,14 +36,14 @@
         "isHobby": true
     },
     {
-        "title": "Cinnamon — Self-Hosted Media Server",
-        "description": "Created a self-hosted service to capture and store HLS video streams.",
-        "link": "https://www.joshuadematas.me/?project=Cinnamon",
+        "title": "Stolen Mower Management — Product tracking tool",
+        "description": "Internal tool at Husqvarna Group to assist in tracking down stolen Automowers.",
+        "link": "https://www.joshuadematas.me/?project=Stolen%20Mower%20Management",
         "bullets": [
-            "Built a Go backend using FFmpeg to convert and stash videos.",
-            "Integrated MinIO (S3 compatible) storage and built a lightweight web UI.",
-            "Developed a custom browser protocol (cinnamon://) to launch downloads from the web."
+            "Built with C# and Blazor.",
+            "Built on Azure using Azure Service Bus, Azure Functions, CosmosDB, etc.",
+            "Integrates external APIs like Google Maps for better location context."
         ],
-        "isHobby": true
+        "isHobby": false
     }
 ]
